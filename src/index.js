@@ -1,18 +1,20 @@
 
 import Phaser from "phaser";
-import { SceneMain } from "./scenes/SceneMain";
+import MainScene from "./scenes/Main";
+import GameScene from "./scenes/Game";
 
 const config = {
   type: Phaser.AUTO,
-  width: 800,
-  height: 600,
+  scaleMode: Phaser.SHOW_ALL,
+  pageAlignHorizontally: true,
+  pageAlignVertically: true,
   physics: {
     default: 'arcade',
     arcade: {
-      gravity: { y: 200 }
+      gravity: { y: 0 }
     }
   },
-  scene: [SceneMain]
+  scene: [MainScene, GameScene]
 };
 
 const game = new Phaser.Game(config);
