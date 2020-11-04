@@ -1,4 +1,8 @@
 # phaser
-phaser_tutorial
 
-to start: npm start
+>to start:
+
+```
+npm start
+
+```
