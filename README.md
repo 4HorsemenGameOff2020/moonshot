@@ -1,4 +1,6 @@
-# phaser
+# Read Me
+
+> Welcome to moonshot
 
 ## Installation:
   1. clone repository onto local machine
