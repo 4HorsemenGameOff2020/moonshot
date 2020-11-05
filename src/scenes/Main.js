@@ -3,6 +3,7 @@ import button from "../assets/start-button.png";
 import background from "../assets/main-background.png";
 import player from "../assets/soldier/soldier_tilesheet.png";
 import Space from "../classes/Space";
+import Align from "../classes/Align";
 
 export default class MainScene extends Scene {
   constructor() {
@@ -21,8 +22,7 @@ export default class MainScene extends Scene {
     space.y = game.config.height / 2;
 
     let button = this.add.sprite(0, 0, "button");
-    button.y = game.config.height / 2;
-    button.x = game.config.width / 2;
+    Align.center(button);
     button.displayWidth = 100;
     button.scaleY = button.scaleX;
 
