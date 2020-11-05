@@ -10,5 +10,7 @@ export default class Space extends GameObjects.Container {
     this.scene.add.existing(this);
     Align.scaleToGameW(this.background, 1)
     this.setSize(game.config.width, game.config.height);
+    this.starGroup = this.scene.add.group();
+
   }
 };
