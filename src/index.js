@@ -17,5 +17,6 @@ const config = {
   scene: [MainScene, GameScene]
 };
 
-const game = new Phaser.Game(config);
+globalThis.game = new Phaser.Game(config);
+
 
